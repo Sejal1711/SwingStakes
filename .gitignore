@@ -1,3 +1,16 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment files
+.env
+**/.env
+
 # Claude Code
 .claude/
 .claude_cache/
+
+# Build outputs
+dist/
+build/
+.next/
