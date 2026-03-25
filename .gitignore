@@ -2,9 +2,16 @@
 node_modules/
 **/node_modules/
 
-# Environment files
+# Environment files — never commit real secrets
 .env
+.env.local
+.env.*.local
 **/.env
+**/.env.local
+**/.env.*.local
+# Allow example/template files
+!.env.example
+!**/.env.example
 
 # Claude Code
 .claude/
@@ -14,3 +21,13 @@ node_modules/
 dist/
 build/
 .next/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
